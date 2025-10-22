@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <style>
+    html{
+      height: 100%;
+    }
+    :root{
+      --border-raduis:5px;
+      --text-font: "uncracked";
+      --linear-gradiant1: #9422B3;
+      --linear-gradiant2: #4F2449;
+      --linear-gradiant3: #3E2930;
+    }
+    @font-face {
+      font-family: "uncracked";
+      src: url("./font.otf");
+    }
+    body {
+      background-image: linear-gradient(to bottom,#9422B3,#4F2449,#3E2930);
+      background-repeat: no-repeat;
+      font-family: "uncracked";
+    }
+  </style>
+  <body>
+    <header style="width: 100%;">
+      <form action="#" style="display: flex;justify-content: space-evenly;gap: 10px;">
+        <select name="genre" id="" style="width: 30%; border-radius: var(--border-raduis);">
+          <option value="" disabled selected>Genre</option>
+          <option value="aventure">Jeux d'Aventure</option>
+          <option value="Strategie">Strategie</option>
+          <option value="RPG">Jeux de Role</option>
+        </select>
+        <select name="plateforme" id="" style="width: 50%;border-radius: var(--border-raduis);">
+          <option value="" disabled selected>Plateforme</option>
+          <option value="Nintendo">Nintendo</option>
+          <option value="Console_XBOX">Console XBOX</option>
+          <option value="Console_PLAYSTATION">Console PLAYSTATION</option>
+        </select>
+        <select name="popularity" id="" style="width: 20%;border-radius: var(--border-raduis);">
+          <option value="" disabled selected>popularité(peak_players)</option>
+          <option value="M1.5">more than 1.5M</option>
+          <option value="M1">more than 1M</option>
+          <option value="M0.5">more than 0.5M</option>
+          <option value="K50">more than 50K</option>
+        </select>
+      </form>
+    </header>
+    
+      <main>
+        <!-- background-image: url(assets/OIP.webp); -->
+        <div style="background-color: aliceblue; position: relative; ;width: 500px;  height: 300px; background-repeat: no-repeat;background-position:center ;background-size: cover;">
+            <div style="display: flex;flex-direction: column;position: absolute;bottom: 0;width: 100%;">            
+              <div style="display: flex; justify-content: space-between;height: 50%;width: 100%;border:2px #4F2449 solid;">
+                <p>CS:GO</p>
+                <button style="background-color: #9f74bc;border-radius: var(--border-raduis);">Savoir Plus</button>
+                <div style="display: flex;">
+                  <strong>4.4</strong><i class="fa-solid fa-star" style="color: blue;z-index: 10;width: 10px;font-size: 16px;" ></i></div>
+              </div>
+            <div><p><i class="fa-solid fa-link" style="font-size: 16px;color: aquamarine;"></i></p><p>https://www.counter-strike.net/</p></div>
+          </div>
+        </div>
+      </main>
+    
+  </body>
+</html>
