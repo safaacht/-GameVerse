@@ -14,7 +14,9 @@ margin: 0;
 padding: 0;
 
 }
-
+html{
+    height: 500vh;
+}
 body {
     margin-top: 5rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -117,13 +119,20 @@ h3{
     color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 1rem;
+    padding: .5rem .5rem;
+    border-radius: var(--border-raduis);
+    border: 1px solid gainsboro;
+    outline: 1px solid rgb(6, 1, 1);
+    outline-offset: 1px;
+        
     
 
 }
 
 h4{
     color: rgb(197, 199, 200);
-    text-align: start;    
+    text-align: start; 
+    margin-top: 2rem;   
 }
 
 input[type=text]:focus {
@@ -169,6 +178,10 @@ input[type=email]:focus {
     justify-content: space-between;
 }
 
+.close:active{
+    display: none;
+    
+}
   /* Abonnement */
 .abonnement{
     border: 2px solid gray;
@@ -213,13 +226,13 @@ input[type=email]:focus {
 }
 
 .length{
-    height: 22rem;
-}
-.length1{
     height: 25rem;
 }
+.length1{
+    height: 28rem;
+}
 .length2{
-    height: 36rem;
+    height: 30rem;
 }
 
 /* Conditions */
@@ -236,4 +249,15 @@ details > p {
   margin: 0;
   box-shadow: 1px 1px 2px #bbbbbb;
 }
+
+.footer{
+  background-color: #b11f1f;
+  color: white;
+  margin-top: 50%;
+  height: 100PX;
+  text-align: center;
+  padding: 20px;
+}
+
+
 }
