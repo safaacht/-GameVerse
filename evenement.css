@@ -1,4 +1,267 @@
-@media only screen and (max-width: 300px){
+@media (max-width: 300px){
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+.header {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 28px;
+  position: fixed;
+  backdrop-filter: blur(20PX);
+  z-index:1; 
+
+
+}
+
+.logo {
+  color: #f8f6f6; 
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top:5PX;
+}
+
+
+
+
+summary {
+  list-style: none;
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+  
+}
+
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+footer {
+color: white;
+
+  margin-top: 50%;
+
+  height: 100PX;
+  text-align: center;
+  padding: 20px;
+}
+
+li a:hover {
+  background-color: #7209B7;
+  scale: 1.1;
+}
+
+
+.signin {
+  background-color: #7209B7;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(0deg,#9422B3,#4F2449,#3E2930);
+  color: #fff;
+  min-height: 100vh;
+    }
+    html{
+    height: 400vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    padding: 10px;
+    margin-top: 80px;
+}
+.container h1{
+    color: #00BFFF;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.profil h2{
+    color: violet;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.profil-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 13px;
+    height: 90px;
+}
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.categories h2{
+    margin-top: 20px;
+}
+.categories i{
+    color: violet;
+    font-size: 10px;
+    margin-top: 13px;
+}
+.pro img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: 1px solid white;
+    outline-offset: 3px;
+}
+.pro p{
+    color: rgb(206, 200, 200);
+    font-size: 10px;
+
+}
+.pro{
+    display: block;
+    height: 150px;
+}
+.events p{
+    color: rgb(205, 201, 201);
+    font-size: 12px;
+    margin: 0;
+}
+.event-card{
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-top: 15px;
+    height: 200px;
+    position: relative;
+    background: gainsboro;
+    padding: 4px;
+    border-radius: 10px;
+    display: block;
+}
+.grp-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.first-part img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.first-part i{
+    color: blanchedalmond;
+    margin-right: 2px;
+}
+.first-part{
+    height: 50%;
+}
+.second-part{
+    height: 50%;
+    position: relative;
+    padding: 5px;
+}
+.participate{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 3px;
+    padding: 3px;
+}
+.participate p{
+    color: white;
+    font-size: 10px;
+}
+.first-part p.cat{
+    position: absolute;
+    top: 94px;
+    background-color: rgb(132, 13, 108);
+    border-radius: 3px;
+    padding: 3px 9px;
+    left: 77px;
+    outline: 2px solid gainsboro;
+}
+.participate i{
+    font-size: 10px;
+    color: white;
+}
+.second-part h4{
+    font-size: 14px;
+    margin: 5px;
+    color: #1a1a1a;
+}
+.second-part p{
+    color: rgb(86, 86, 86);
+    margin: 5px;
+}
+.second-part button.first{
+    position: absolute;
+    cursor: pointer;
+    bottom: 10px;
+    right: 8px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-size: 10px;
+    padding: 5px 9px;
+    border-radius: 7px;
+    border: 1px solid gainsboro;
+    outline: 1px solid black;
+    outline-offset: 1px;
+}
+.second-part button.second{
+    position: absolute;
+    cursor: pointer;
+    bottom: 10px;
+    left: 8px;
+    background-color: rgb(132, 13, 108);
+    color: aliceblue;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 9px;
+    border-radius: 7px;
+    border: 1px solid gainsboro;
+    outline: 1px solid rgba(0, 0, 0, 0.436);
+    outline-offset: 1px;
+}
+.second-part button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+}
+@media (min-width:300px){
     html{
     height: 500vh;
     background: linear-gradient(0deg,#9422B3,#4F2449,#3E2930);
@@ -18,7 +281,7 @@
 }
 .profil-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     gap: 13px;
     height: 90px;
 }
@@ -56,7 +319,7 @@
 .event-card{
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 23%;
     margin-top: 15px;
     height: 200px;
     position: relative;
@@ -67,7 +330,6 @@
 }
 .grp-card{
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
@@ -82,6 +344,7 @@
 }
 .first-part{
     height: 50%;
+    position: relative;
 }
 .second-part{
     height: 50%;
@@ -101,13 +364,13 @@
     color: white;
     font-size: 10px;
 }
-.participate p.cat{
+.first-part p.cat{
     position: absolute;
-    top: 83px;
+    bottom: -10px;
     background-color: rgb(132, 13, 108);
     border-radius: 3px;
     padding: 3px 9px;
-    left: 70px;
+    left: 39%;
     outline: 2px solid gainsboro;
 }
 .participate i{
@@ -154,159 +417,82 @@
 .second-part button:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
-}
-html{
-    height: 500vh;
-    background: linear-gradient(0deg,#9422B3,#4F2449,#3E2930);
-    font-family: Arial, Helvetica, sans-serif;
+.header {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 28px;
+  position: fixed;
+  backdrop-filter: blur(20%);
+ align-items: center;
+
 
 }
-.container{
-    padding: 10px;
-}
-.container h1{
-    color: #00BFFF;
-    font-size: 17px;
-}
-.profil h2{
-    color: violet;
-    font-size: 14px;
-}
-.profil-container{
-    display: flex;
-    justify-content: flex-start;
-    gap: 13px;
-    height: 90px;
-}
-.categories{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-}
-.categories i{
-    color: violet;
-    font-size: 10px;
-}
-.pro img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    outline: 1px solid white;
-    outline-offset: 3px;
-}
-.pro p{
-    color: rgb(206, 200, 200);
-    font-size: 10px;
 
+.logo {
+  color: #f8f6f6; 
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top:5PX; 
 }
-.pro{
-    display: block;
-    height: 150px;
+
+
+
+
+summary {
+  list-style: none;
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+  
 }
-.events p{
-    color: rgb(205, 201, 201);
-    font-size: 12px;
-    margin: 0;
+
+
+summary::-webkit-details-marker {
+  display: none;
 }
-.event-card{
-    justify-content: center;
-    align-items: center;
-    width: 85%;
-    margin-top: 15px;
-    height: 200px;
-    position: relative;
-    background: gainsboro;
-    padding: 4px;
-    border-radius: 10px;
-    display: block;
+
+
+
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
-.grp-card{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+
+li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
-.first-part img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+
+li a:hover {
+  background-color: #7209B7;
+  scale: 1.1;
 }
-.first-part i{
-    color: blanchedalmond;
-    margin-right: 2px;
+
+
+.signin {
+  background-color: #7209B7;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  font-weight: bold;
 }
-.first-part{
-    height: 50%;
-}
-.second-part{
-    height: 50%;
-    position: relative;
-    padding: 5px;
-}
-.participate{
-    display: flex;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgb(58, 58, 58);
-    border-radius: 3px;
-    padding: 3px;
-}
-.participate p{
-    color: white;
-    font-size: 10px;
-}
-.participate p.cat{
-    position: absolute;
-    top: 83px;
-    background-color: rgb(132, 13, 108);
-    border-radius: 3px;
-    padding: 3px 9px;
-    left: 70px;
-    outline: 2px solid gainsboro;
-}
-.participate i{
-    font-size: 10px;
-    color: white;
-}
-.second-part h4{
-    font-size: 14px;
-    margin: 5px;
-}
-.second-part p{
-    color: rgb(86, 86, 86);
-    margin: 5px;
-}
-.second-part button.first{
-    position: absolute;
-    cursor: pointer;
-    bottom: 10px;
-    right: 8px;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    font-size: 10px;
-    padding: 5px 9px;
-    border-radius: 7px;
-    border: 1px solid gainsboro;
-    outline: 1px solid black;
-    outline-offset: 1px;
-}
-.second-part button.second{
-    position: absolute;
-    cursor: pointer;
-    bottom: 10px;
-    left: 8px;
-    background-color: rgb(132, 13, 108);
-    color: aliceblue;
-    font-size: 10px;
-    font-weight: bold;
-    padding: 5px 9px;
-    border-radius: 7px;
-    border: 1px solid gainsboro;
-    outline: 1px solid rgba(0, 0, 0, 0.436);
-    outline-offset: 1px;
-}
-.second-part button:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
