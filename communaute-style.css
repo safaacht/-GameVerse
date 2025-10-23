@@ -15,14 +15,21 @@ padding: 0;
 
 }
 html{
-    height: 500vh;
+    height: 420vh;
 }
+
+.background-image{
+    background-size: cover;
+}
+
 body {
     margin-top: 5rem;
     font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   min-height: 100vh;
     }
+
+    /* Nav bare */
 .header {
 
   top: 0;
@@ -102,6 +109,8 @@ li a:hover {
   text-align: center;
   font-weight: bold;
 }
+
+/* end of nav bare */
 
 .first{
     margin-top: 2rem;
@@ -227,36 +236,49 @@ input[type=email]:focus {
 
 .length{
     height: 25rem;
+    margin-left: .2rem;
 }
 .length1{
     height: 28rem;
+    margin-left: .2rem;
 }
 .length2{
     height: 30rem;
+    margin-left: .2rem;
 }
 
 /* Conditions */
+.conditions{
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+     border-radius: var(--border-raduis);
+     border: 1px solid gainsboro;
+     width: 17rem;
+     margin-left: .2rem;
+
+
+
+}
 details > summary {
   padding: 4px;
   border: none;
-  box-shadow: 1px 1px 2px #bbbbbb;
+  box-shadow: 1px 1px 2px;
   cursor: pointer;
 }
 
 details > p {
-  background-color: #eeeeee;
+  background-color: black;
   padding: 4px;
   margin: 0;
   box-shadow: 1px 1px 2px #bbbbbb;
 }
 
+/* FOOTER */
 .footer{
-  background-color: #b11f1f;
   color: white;
   margin-top: 50%;
-  height: 100PX;
   text-align: center;
-  padding: 20px;
+
 }
 
 
