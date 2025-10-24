@@ -1,4 +1,4 @@
-@media (max-width: 300px) {
+@media (max-width: 309px) {
     * {
         margin: 0;
         padding: 0;
@@ -15,7 +15,7 @@
         justify-content: space-around;
         padding-top: 28px;
         position: fixed;
-        backdrop-filter: blur(20PX);
+        backdrop-filter: blur(20px);
         z-index: 1;
 
 
@@ -307,7 +307,7 @@
     }
 }
 
-@media (min-width:300px) {
+@media (min-width:310px) {
     html {
         height: 500vh;
         background: linear-gradient(0deg, #9422B3, #4F2449, #3E2930);
