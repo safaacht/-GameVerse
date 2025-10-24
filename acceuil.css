@@ -151,3 +151,243 @@ body {
   transform: scale(1.05);
 }
 
+/* ===== LAST REVLESES & PLAYERS REVIWS ===== */
+.releases {
+  padding:50px 20px;
+ 
+  
+  text-align: center;
+}
+
+.releases h2 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.game-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* ===== GAME CARDS ===== */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  width: 90%;
+  max-width: 320px;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInRight 1s ease forwards;
+ 
+}
+
+.card:nth-child(2) {
+  transform: translateX(-100px);
+  animation: slideInLeft 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+  transform: translateX(100px);
+  animation: slideInRight 1s ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+   filter: brightness(110%)
+}
+
+.card h3 {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 12px;
+}
+
+.card button {
+  background: rgb(190, 21, 212);
+  border: none;
+  padding: 8px 18px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+    background: rgba(244, 34, 234, 0.418);
+    scale: 1.1;
+}
+ img:hover{
+   scale: 1.1;
+ 
+   
+ }
+
+
+
+/* ======= comentes ======*/
+
+
+.comment {
+  margin-top: 15px;
+  display: flex;
+  
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  width: 220px;
+  backdrop-filter: blur(5px);
+
+}
+
+.avatar {
+ 
+  width: 80px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  
+
+
+}
+
+.text h4 {
+  margin-right:105px;
+  font-size: 16px;
+}
+
+.text p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.time {
+  font-size: 12px;
+  color: #ccc;
+
+}
+
+
+  
+/*============ FAMOUSE GAMES AND  players opinions    ===========*/
+
+
+
+.section-title {
+  margin-top: 25px;
+  margin-left: 46px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* games section*/
+.games-section {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-card {
+ 
+  border-radius: 15px;
+  width: 85%;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.game-title {
+  margin: 10px 60PX;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.CS2{
+   margin: 10px 40PX;
+
+}
+
+.stars {
+  margin:0px 60px ;
+  color: gold;
+  font-size: 18px;
+  
+}
+
+/* ++++++ players opinions   ++++++*/
+.opinions-section {
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.opinion-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-pic {
+  width: 90px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.user-info {
+  text-align: left;
+  color: #f1f1f1;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-comment {
+  font-size: 14px;
+  color: #ddd;
+}
