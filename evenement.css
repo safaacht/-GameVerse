@@ -5,6 +5,14 @@
 
     }
 
+    .main-header {
+        display: none;
+    }
+
+    .disktop-footer {
+        display: none;
+    }
+
     .header {
 
         top: 0;
@@ -51,10 +59,10 @@
     }
 
 
-    .logo span.glow{
+    .logo span.glow {
         color: #fff;
         animation: glow 1s ease-in-out infinite alternate;
-          font-family: cursive;
+        font-family: cursive;
 
     }
 
@@ -309,7 +317,6 @@
 
 @media (min-width:310px) {
     html {
-        height: 500vh;
         background: linear-gradient(0deg, #9422B3, #4F2449, #3E2930);
         font-family: Arial, Helvetica, sans-serif;
 
@@ -568,10 +575,10 @@
     }
 
 
-        .logo span.glow{
+    .logo span.glow {
         color: #fff;
         animation: glow 1s ease-in-out infinite alternate;
-          font-family: cursive;
+        font-family: cursive;
 
     }
 
@@ -584,4 +591,71 @@
             text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
         }
     }
+
+    .header {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: none;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .general {
+        padding: 20px;
+        display: flex;
+        background: linear-gradient(0deg, #29012a, transparent);
+        justify-content: space-around;
+        color: white;
+    }
+
+    .first {
+        width: 32%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .first button {
+        margin-left: 100px;
+        padding: 5px 25px;
+        background-color: transparent;
+        font-weight: bold;
+        border: 1px solid wheat;
+        cursor: pointer;
+        color: white;
+    }
+
+    .first button a {
+        text-decoration: none;
+    }
+
+    .first button:hover {
+        background-color: white;
+        color: green;
+    }
+
+    ul li {
+        list-style: none;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+
+    ul li:hover {
+        color: violet;
+    }
+
 }
