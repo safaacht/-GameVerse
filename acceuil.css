@@ -7,10 +7,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(0deg, #3d1648, #792879); 
-  color: #fff;
+  background: linear-gradient(0deg, #3d1648, #792879);
+   color: #fff;
   min-height: 100vh;
 
+    }
+    main{
+      margin-top: 85PX;
     }
   
 /* ===== HEADER ===== */
@@ -97,17 +100,6 @@ li a:hover {
 }
 
 
-/* ===== RESET ===== */
-
-
-body {
-  background-color: #2c2c54;
-  color: #fff;
-}
-
-
-
-
 /* ===== HERO SECTION ===== */
 .hero {
   position: relative;
@@ -134,7 +126,9 @@ body {
   text-align: center;
 }
 
-.hero-content button {
+.bt {
+  
+    margin-top: 0;
     
   background:none;
   border: none;
@@ -144,6 +138,8 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
+  
+ 
 }
 
 .hero-content button:hover {
@@ -372,8 +368,8 @@ body {
 }
 
 .user-pic {
-  width: 90px;
-  height: 50px;
+  width: 100px;
+  height: 59px;
   background-color: white;
   border-radius: 50%;
 }
@@ -391,3 +387,117 @@ body {
   font-size: 14px;
   color: #ddd;
 }
+
+/*============= last section=========*/
+
+
+
+
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  padding: 30px 10px;
+  flex-wrap: wrap; 
+}
+
+
+.image-side img {
+  width: 160px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+
+.form-side {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+}
+
+.form-side h2 {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  text-align: left;
+  font-size: 0.85em;
+  color: #ddd;
+}
+
+input {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 0.9em;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ca10ef04;
+  color: #f7f5f9;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #d207ed42;
+}
+
+
+footer {
+  text-align: center;
+  height:60px ;
+  font-size: 0.85em;
+  color: #ccc;
+  margin-top: auto;
+  padding: 15px 0;
+  background-color: #000;
+  
+}
+
+
+
+  
+ /* Desktop only */
+@media (min-width: 768px) {
+  
+ summary{
+  border: none;
+ }
+
+  
+  }
+
+
+
+
+
+   
+
+  
+  
