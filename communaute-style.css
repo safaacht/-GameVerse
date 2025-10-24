@@ -287,6 +287,9 @@ details > p {
   text-align: center;
 
 }
+.main-footer{
+  display: none;
+}
 
 
 }
@@ -408,6 +411,7 @@ body {
     flex-direction: row;
     gap: 100px;
     
+    
 }
 
 h2{
@@ -511,12 +515,35 @@ input[type=email]:focus {
 .POPUP a{
     text-decoration: none;
 }
+.types{
+  display: none;
+  background: linear-gradient(0deg, #9422B3, #4F2449, #3E2930);
+  position: fixed;
+  /* left:7rem; */
+  left: 0;
+  right: 0;
+  top: 4rem;
+  bottom: 0;
+  border-radius: var(--border-raduis);
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  backdrop-filter: blur(4px);
+}
+.types:target{
+  display: flex;
+
+
+}
 
 .types-content{
     text-align: center;
     color: #0f0f0f;
     display: flex;
-    justify-content: space-evenly;
+    align-items: end;
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
     
 }
 
@@ -557,6 +584,13 @@ input[type=email]:focus {
 .close:target{
     display: flex;
 }
+.close {
+  color: var(--linear-gradiant1);
+  text-decoration: none;
+  position: absolute;
+  bottom: 95%;
+  left: 98%;
+}
 
 /* Conditions */
 .conditions{
@@ -584,11 +618,49 @@ details > p {
 }
 
 /* FOOTER */
-/* .footer{
-  color: white;
-  margin-top: 50%;
-  text-align: center;
+ .footer {
+   display: none;
+} 
+ .general{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-top: 10rem;
+}
+.first-cnd{
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.icons{
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
 
-} */
+.first-cnd button{
+    margin-left: 100px;
+    padding: 5px 25px;
+    background-color: transparent;
+    font-weight: bold;
+    border: 1px solid wheat;
+    cursor: pointer;
+    color: white;
+}
+.first-cnd button a{
+    text-decoration: none;
+}
+.first-cnd button:hover{
+    background-color: white;
+    color: green;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+
     
 }
